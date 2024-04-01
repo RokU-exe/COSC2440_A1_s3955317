@@ -122,7 +122,10 @@ public class Main {
         if (allClaims.isEmpty()) {
             System.out.println("No claims found.");
         } else {
-            allClaims.forEach(claim -> System.out.println(STR."Claim ID: \{claim.getId()}, Claim Date: \{sdf.format(claim.getClaimDate())}, Amount: \{claim.getClaimAmount()}, Status: \{claim.getStatus()}"));
+            allClaims.forEach(claim ->
+                    System.out.printf("Claim ID: %s, Claim Date: %s, Amount: %.2f, Status: %s%n",
+                            claim.getId(), sdf.format(claim.getClaimDate()), claim.getClaimAmount(), claim.getStatus())
+            );
         }
     }
     //Add showClaimDetails method
@@ -132,7 +135,7 @@ public class Main {
         String claimId = scanner.nextLine();
         Claim claim = claimManager.getOne(claimId);
         if (claim != null) {
-            System.out.println(STR."Claim Details: \{claim}");
+            System.out.println("Claim Details: " + claim);
         } else {
             System.out.println("Claim not found.");
         }
@@ -242,7 +245,7 @@ public class Main {
             System.out.println("Data saved successfully.");
             System.exit(0);
         } catch (IOException e) {
-            System.err.println(STR."Failed to save data: \{e.getMessage()}");
+            System.err.println("Failed to save data: " + e.getMessage());
             e.printStackTrace();
         }
     }

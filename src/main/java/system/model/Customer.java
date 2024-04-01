@@ -65,6 +65,6 @@ public abstract class Customer {
      */
     @Override
     public String toString() {
-        return STR."Dependent{id='\{id}\{'\''}, fullName='\{fullName}\{'\''}, insuranceCard=\{insuranceCard}\{'}'}";
+        return String.format("Dependent{id='%s', fullName='%s', insuranceCard=%s}", id, fullName, insuranceCard);
     }
 }

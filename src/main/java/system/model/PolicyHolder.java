@@ -24,7 +24,6 @@ public class PolicyHolder extends Customer {
 
     @Override
     public String toString() {
-        // Simplified for brevity, adjust as necessary
         return "PolicyHolder{" +
                 "id='" + id + '\'' +
                 ", fullName='" + fullName + '\'' +

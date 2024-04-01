@@ -74,6 +74,7 @@ public class Claim {
 
     @Override
     public String toString() {
-        return STR."Claim{id='\{id}\{'\''}, claimDate=\{claimDate}, insuredPerson=\{insuredPerson}, cardNumber='\{cardNumber}\{'\''}, examDate=\{examDate}, documents=\{documents}, claimAmount=\{claimAmount}, status='\{status}\{'\''}, receiverBankingInfo='\{receiverBankingInfo}\{'\''}\{'}'}";
+        return String.format("Claim{id='%s', claimDate=%s, insuredPerson=%s, cardNumber='%s', examDate=%s, documents=%s, claimAmount=%f, status='%s', receiverBankingInfo='%s'}",
+                id, claimDate, insuredPerson, cardNumber, examDate, documents, claimAmount, status, receiverBankingInfo);
     }
 }

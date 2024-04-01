@@ -28,7 +28,7 @@ public class ClaimProcessManagerImpl implements ClaimProcessManager {
                 return;
             }
         }
-        System.out.println(STR."Claim with ID \{claimId} not found.");
+        System.out.printf("Claim with ID %s not found.%n", claimId);
     }
 
     @Override
