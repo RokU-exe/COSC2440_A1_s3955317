@@ -41,25 +41,25 @@ public class Main {
                 scanner.nextLine();
                 switch (choice) {
                     case 1:
-                        listAllCustomers();
+                        listAllCustomers(); //Option to list all customers in the customers.txt file
                         break;
                     case 2:
-                        listAllClaims();
+                        listAllClaims(); //Option to list all claims in the claims.txt file
                         break;
                     case 3:
-                        showClaimDetails();
+                        showClaimDetails(); //Option to input the claims id to check a specific claim
                         break;
                     case 4:
-                        addNewClaim();
+                        addNewClaim(); //Option to check a new claim into the claims.txt file
                         break;
                     case 5:
-                        updateClaim();
+                        updateClaim(); //Option to update details for a claims in the claims.txt file
                         break;
                     case 6:
-                        deleteClaim();
+                        deleteClaim(); //Option to delete a claim in claims.txt file
                         break;
                     case 0:
-                        saveDataAndExit();
+                        saveDataAndExit(); //Option to save the changes after choosing options above
                         return; // exit main program running
                     default:
                         System.out.println("Invalid option. Please try again.");
@@ -71,6 +71,7 @@ public class Main {
         }
     }
 
+    //Associate the claims.txt and insuranceCard.txt data for the option listAllCustomers method
     private static void associateInsuranceCardsWithCustomers() {
         Map<String, InsuranceCard> cardMap = new HashMap<>();
         for (InsuranceCard card : insuranceCards) {
