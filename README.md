@@ -1,6 +1,8 @@
 # Insurance Claims Management System
 Welcome to the Insurance Claims Management System, a tool designed to manage and track insurance claims efficiently. This system allows users to handle customer information, insurance cards, and claim data effectively.
+
 In order to run the application smoothly, download the code file and open the folder "COSC2440_A1_s3955317" in IntelliJ IDE, if the user only opens the folder "src", the app will crash.
+
 Starting the Application: Navigate to the directory containing the application and run the Main.java file to start the application.
 
 Main functionalities: 
